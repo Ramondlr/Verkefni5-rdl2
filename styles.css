@@ -7,6 +7,7 @@
   box-sizing: inherit;
 }
 
+
 html {
   box-sizing: border-box;
 
@@ -22,4 +23,122 @@ main {
 
 .cards {
   background: #eee;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
 }
+/*
+  flex-flow: wrap;
+*/
+
+.card {
+  background-color: #fff;
+  border: 2px solid  #aaa;
+  border-radius: 5px;
+  max-width: 470px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+  box-sizing: unset;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+  */
+
+.card__fyrirsogn {
+  font-size: 22px;
+  line-height: 22px;
+  padding: 5px;
+  word-break: break-word;
+  /*justify-content: flex-start; 
+  ---  skoða seinna varðandi hvort
+  þetta hefur áhrif á hreiður og börn!
+  */
+}
+
+.card__flex--wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  min-height: 0px;
+  max-height: 300px;
+  overflow-y: auto;
+  flex: 1;
+}
+/*
+  max-width: 470px;
+  max-height: 300px;
+*/
+
+/*
+.card__texti {
+  font-size: 1em;
+  line-height: 1.375;
+  max-width: 470px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  justify-content: flex-start;
+  padding: 5px;
+}*/
+
+.card__flex {
+  line-height: 22px;
+  padding: 5px;
+  flex-wrap: wrap;
+  word-break: break-word;
+  overflow-y: auto;
+  min-height: 0px;
+  max-height: 300px;
+}
+
+/*
+  line-break: auto;
+  overflow: hidden;
+  margin: 10px;
+  overflow-y: scroll;
+*/
+
+/*
+.card__flex--text {
+  display: flex;
+  flex-flow: wrap;
+  overflow: hidden;
+}*/
+
+.card__image img {
+  display: flex;
+  align-items: baseline;
+  /*object-position: right;
+  object-fit: contain;
+  background-color: #fff;*/
+  width: 150px;
+  height: auto;
+  padding: 5px;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-weight: bold;
+  height: auto;
+  width: auto; 
+  justify-content: baseline;
+  padding: 5px;
+}
+
+/*
+
+  
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  line-break: auto;
+  margin: 10px;
+  justify-content: space-between;
+  */
