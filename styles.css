@@ -27,9 +27,6 @@ main {
   display: flex;
   justify-content: space-around;
 }
-/*
-  flex-flow: wrap;
-*/
 
 .card {
   background-color: #fff;
@@ -42,22 +39,11 @@ main {
   flex-direction: column;
 }
 
-/*
-  box-sizing: unset;
-  align-items: center;
-  flex-wrap: wrap;
-  overflow: scroll;
-  */
-
 .card__fyrirsogn {
   font-size: 22px;
   line-height: 22px;
   padding: 5px;
   word-break: break-word;
-  /*justify-content: flex-start; 
-  ---  skoða seinna varðandi hvort
-  þetta hefur áhrif á hreiður og börn!
-  */
 }
 
 .card__flex--wrapper {
@@ -68,22 +54,6 @@ main {
   overflow-y: auto;
   flex: 1;
 }
-/*
-  max-width: 470px;
-  max-height: 300px;
-*/
-
-/*
-.card__texti {
-  font-size: 1em;
-  line-height: 1.375;
-  max-width: 470px;
-  max-height: 300px;
-  margin-bottom: 10px;
-  overflow: hidden;
-  justify-content: flex-start;
-  padding: 5px;
-}*/
 
 .card__flex {
   line-height: 22px;
@@ -95,26 +65,10 @@ main {
   max-height: 300px;
 }
 
-/*
-  line-break: auto;
-  overflow: hidden;
-  margin: 10px;
-  overflow-y: scroll;
-*/
-
-/*
-.card__flex--text {
-  display: flex;
-  flex-flow: wrap;
-  overflow: hidden;
-}*/
 
 .card__image img {
   display: flex;
   align-items: baseline;
-  /*object-position: right;
-  object-fit: contain;
-  background-color: #fff;*/
   width: 150px;
   height: auto;
   padding: 5px;
@@ -131,14 +85,6 @@ main {
   padding: 5px;
 }
 
-/*
-
-  
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-  line-break: auto;
-  margin: 10px;
-  justify-content: space-between;
-  */
+li {
+  padding:5px;
+}
